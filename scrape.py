@@ -9,7 +9,7 @@ from selenium.webdriver.common.keys import Keys
 import time
 
 chrome_path = "C:\Program Files (x86)\chromedriver-win64\chromedriver.exe"
-service = Service(chrome_path)
+service = Service()
 
 driver = webdriver.Chrome(service=service)
 
