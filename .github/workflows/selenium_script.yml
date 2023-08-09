@@ -1,8 +1,13 @@
 name: Run Selenium Script Daily
 
+# on:
+#   schedule:
+#     - cron: '0 0 * * *'  # Run every day at midnight UTC
+
 on:
-  schedule:
-    - cron: '0 0 * * *'  # Run every day at midnight UTC
+  push:
+    branches:
+      - master 
 
 jobs:
   run-selenium-script:
