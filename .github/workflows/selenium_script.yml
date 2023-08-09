@@ -40,4 +40,8 @@ jobs:
         pip install selenium
       
     - name: Run Selenium script
-      run: python path/to/your/script.py  # Adjust the path to your script
+      run: python scrape.py  # Adjust the path to your script
+
+    - name: Cleanup
+      run: |
+        pkill -f "chromedriver --url-base"
